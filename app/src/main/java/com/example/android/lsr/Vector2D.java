@@ -74,7 +74,6 @@ public class Vector2D {
 
     public static double getAngle(Vector2D v1, Vector2D v2) {
         double alpha = Math.acos(dotProduct(v1, v2) / (v1.getMagnitude() * v2.getMagnitude()));
-        if(v1.j<0)alpha*=-1;
         return alpha;
     }
 

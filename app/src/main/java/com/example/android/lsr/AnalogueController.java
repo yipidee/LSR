@@ -34,7 +34,7 @@ import android.view.View;
 public class AnalogueController extends View{
 
     //member variable
-    private int mR, mr;
+    private int mR;
     private double mRRatio;
     private Paint mPaintInner;
     private Paint mPaintOuter;
@@ -78,7 +78,7 @@ public class AnalogueController extends View{
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawCircle(mR, mR, (int)(mR*(1-mRRatio)), mPaintOuter);
-        canvas.drawCircle((int)mPoint.i ,(int)mPoint.j ,mr, mPaintInner);
+        canvas.drawCircle((int)mPoint.i ,(int)mPoint.j ,(int)(mR*mRRatio), mPaintInner);
     }
 
     @Override
@@ -87,7 +87,6 @@ public class AnalogueController extends View{
 
         int mD=Math.min(w, h);
         mR=mD/2;
-        mr=(int)(mR*mRRatio);
 
         mOffset=new Vector2D(mR,mR);
         mPoint=mOffset;
@@ -119,6 +118,7 @@ public class AnalogueController extends View{
                 res=true;
             } else {
                 double alpha = Vector2D.getAngle(mOutput, Vector2D.EAST);
+                if(mOutput.j<0)alpha*=-1;
                 mOutput.i = Math.cos(alpha);
                 mOutput.j = Math.sin(alpha);
                 mPoint=Vector2D.add(mOffset,Vector2D.scale(mOutput,mR*(1-mRRatio)));

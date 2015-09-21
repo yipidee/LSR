@@ -22,4 +22,12 @@ public class Vector3D {
         this.j=j;
         this.k=k;
     }
+
+    public static Vector3D from2D(Vector2D v){
+        return new Vector3D(v.i, v.j, 0);
+    }
+
+    public Vector2D to2D(){
+        return new Vector2D(this.i, this.j);
+    }
 }
