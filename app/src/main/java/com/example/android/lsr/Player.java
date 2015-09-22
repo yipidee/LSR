@@ -1,7 +1,8 @@
 package com.example.android.lsr;
 
-import android.graphics.Bitmap;
+import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Rect;
 
 /**
  * Player class extended from Sprite2D in the 2T:LSR game.
@@ -25,8 +26,10 @@ import android.graphics.Canvas;
 public class Player extends Sprite2D{
 
     //constants
-    private final int PLAYER_HEIGHT = 100;
+    public final int PLAYER_HEIGHT = 100;
     private final double MAX_SPEED = 100;
+    private final int MAX_TOUCHES = 2;
+    private final int[] FRAME_PER_ROW = {1,2};
 
     //player states
     public final int PLAYER_STATE_STATIONARY = 0;
@@ -37,25 +40,43 @@ public class Player extends Sprite2D{
     public final int PLAYER_STATE_FALLING = 5;
 
     //member variables
-    private Bitmap spriteMap;
-    private AnalogueController playerVel;
+    private SpriteMap spriteMap;
+    private boolean frameUpdateNeeded;
+    private int playerState, currFrame, framesInState;
+    private Controller playerController;
     private int MAX_X, MAX_Y;
+    private int noTouches;
 
     public Player(int width, int height, Vector2D pos){
         super(width, height);
         this.setX(pos);
         this.setDX(Vector2D.ZERO);
+        this.noTouches=this.MAX_TOUCHES;
+        this.currFrame=0;
+        this.playerState=PLAYER_STATE_STATIONARY;
+        this.currFrame=0;
+    }
+
+    public void setPlayerController(Controller controller){
+        this.playerController=controller;
+    }
+
+    public void setSpriteMap(Context c, int resID){
+        spriteMap=SpriteMap.makeSpriteMap(c,resID,getWidth(),getHeight(),FRAME_PER_ROW);
     }
 
     @Override
     public void draw(Canvas c) {
-
+        spriteMap.drawFromIndex(c, new Rect(0,0,getWidth(),getHeight()),playerState,0);
     }
 
     @Override
     public void updatePhysics(long deltaT) {
         setLastX(getX());       //save last position
-        setDX(Vector2D.scale(playerVel.getOutput(),MAX_SPEED)); //get new velocity input
+        setDX(Vector2D.scale(
+                playerController.getControllerOutput().getVelocityOutput(),
+                MAX_SPEED)
+        ); //get new velocity input
         setX(Vector2D.add(getLastX(),Vector2D.scale(getDX(),deltaT))); //calc new position
 
         //Check validity of position, adjusting for bounds
@@ -70,5 +91,28 @@ public class Player extends Sprite2D{
     public void setBounds(int X, int Y){
         MAX_X=X;
         MAX_Y=Y;
+    }
+
+    public int getSpriteType(){
+        return Sprite2D.PLAYER_SPRITE;
+    }
+
+    public void decrementTouches(){
+        this.noTouches--;
+    }
+
+    public void resetTouchCount(){
+        this.noTouches=this.MAX_TOUCHES;
+    }
+
+    public boolean hasTouches(){
+        if(this.noTouches>0)return true;
+        return false;
+    }
+
+    public void setState(int playerState){
+        this.playerState=playerState;
+        currFrame=0;
+        spriteMap.setIndex(playerState,currFrame);
     }
 }

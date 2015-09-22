@@ -13,6 +13,7 @@ package com.example.android.lsr;
  *      double getMagnitude()               returns magnitude of vector
  *      void normalize()                    normalizes the vector
  *      String toString()                   returns String representation of vector
+ *      boolean equals(Vector2D)            returns true for equal vector
  *
  * Static methods:
  *      double dotProduct(Vector2D, Vector2D)       returns v1 dot v2
@@ -114,5 +115,9 @@ public class Vector2D {
             s = String.format("%1.3fi%2.3fj", this.i, this.j);
         }
         return s;
+    }
+
+    public boolean equals(Vector2D v){
+        return (this.i==v.i && this.j==v.j);
     }
 }

@@ -23,6 +23,11 @@ import android.graphics.Canvas;
 
 public abstract class Sprite2D {
 
+    // Srite2D type identifier
+    public static final int PLAYER_SPRITE = 0;
+    public static final int BALL_SPRITE = 1;
+    public static final int GOAL_SPRITE = 2;
+
     private Vector2D mX, mLastX, mDX, mLastDX, mDDX;     //Vector for position and velocity
     private int mWidth, mHeight;                 //width and height of drawable
 
