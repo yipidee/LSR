@@ -42,7 +42,7 @@ public class Player extends Sprite2D{
     //member variables
     private SpriteMap spriteMap;
     private boolean frameUpdateNeeded;
-    private int playerState, currFrame, framesInState;
+    private int playerState, currFrame;
     private Controller playerController;
     private int MAX_X, MAX_Y;
     private int noTouches;
@@ -106,8 +106,7 @@ public class Player extends Sprite2D{
     }
 
     public boolean hasTouches(){
-        if(this.noTouches>0)return true;
-        return false;
+        return (this.noTouches>0);
     }
 
     public void setState(int playerState){
