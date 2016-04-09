@@ -2,7 +2,8 @@ package com.example.android.lsr;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Rect;
+import android.graphics.Color;
+import android.graphics.Paint;
 
 /**
  * Player class extended from Sprite2D in the 2T:LSR game.
@@ -47,6 +48,10 @@ public class Player extends Sprite2D{
     private int MAX_X, MAX_Y;
     private int noTouches;
 
+    //TESTING ONLY
+    //TODO:delete these
+    Paint testPaint = new Paint();
+
     public Player(int width, int height, Vector2D pos){
         super(width, height);
         this.setX(pos);
@@ -55,6 +60,11 @@ public class Player extends Sprite2D{
         this.currFrame=0;
         this.playerState=PLAYER_STATE_STATIONARY;
         this.currFrame=0;
+
+        //TODO:delete
+        testPaint.setColor(Color.BLUE);
+        testPaint.setAntiAlias(true);
+        testPaint.setDither(true);
     }
 
     public void setPlayerController(Controller controller){
@@ -67,7 +77,9 @@ public class Player extends Sprite2D{
 
     @Override
     public void draw(Canvas c) {
-        spriteMap.drawFromIndex(c, new Rect(0,0,getWidth(),getHeight()),playerState,0);
+        //spriteMap.drawFromIndex(c, new Rect(0,0,getWidth(),getHeight()),playerState,0);
+        cc.drawCircle((float)this.getX().i,(float)this.getX().j,100,testPaint);
+        c.drawLine((float)this.getX().i,(float)this.getX().j,(float)this.getX().i,(float)this.getX().j-50,null);
     }
 
     @Override

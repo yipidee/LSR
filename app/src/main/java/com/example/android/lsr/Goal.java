@@ -41,7 +41,7 @@ public class Goal extends Sprite2D{
     public void updatePhysics(long deltaT) {
         //goals don't move. No physics
     }
-    
+
     public void setGoalState(int goalState){
         this.state=goalState;
         currentFrame=0;

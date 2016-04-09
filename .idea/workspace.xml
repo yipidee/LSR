@@ -22,7 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6758c31f-efd8-4283-8b76-d3ce124436dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -52,16 +52,6 @@
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4701#4702#0" expanded="true" />
-                <element signature="e#4764#4765#0" expanded="true" />
-                <element signature="e#5025#5026#0" expanded="true" />
-                <element signature="e#5055#5056#0" expanded="true" />
-                <element signature="e#5098#5099#0" expanded="true" />
-                <element signature="e#5141#5142#0" expanded="true" />
-                <element signature="e#5184#5185#0" expanded="true" />
-                <element signature="e#5227#5228#0" expanded="true" />
-                <element signature="e#5265#5266#0" expanded="true" />
-                <element signature="e#5290#5291#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,35 +69,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1706#1707#0" expanded="true" />
-                <element signature="e#1754#1755#0" expanded="true" />
-                <element signature="e#2817#2818#0" expanded="true" />
-                <element signature="e#2862#2863#0" expanded="true" />
-                <element signature="e#2899#2900#0" expanded="true" />
-                <element signature="e#2931#2932#0" expanded="true" />
-                <element signature="e#2967#2968#0" expanded="true" />
-                <element signature="e#3014#3015#0" expanded="true" />
-                <element signature="e#3048#3049#0" expanded="true" />
-                <element signature="e#3089#3090#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Goal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7798742">
-              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+              <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1565,9 +1535,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Vector2D.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Controller.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/SpriteMap.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -1602,15 +1579,16 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="LSR" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1657,6 +1635,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -1920,16 +1901,48 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4701#4702#0" expanded="true" />
-            <element signature="e#4764#4765#0" expanded="true" />
-            <element signature="e#5025#5026#0" expanded="true" />
-            <element signature="e#5055#5056#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#5141#5142#0" expanded="true" />
-            <element signature="e#5184#5185#0" expanded="true" />
-            <element signature="e#5227#5228#0" expanded="true" />
-            <element signature="e#5265#5266#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/SpriteMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/AnalogueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1948,16 +1961,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#2817#2818#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2931#2932#0" expanded="true" />
-            <element signature="e#2967#2968#0" expanded="true" />
-            <element signature="e#3014#3015#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3089#3090#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1971,13 +1976,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_controller_test.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -1994,16 +1999,6 @@
           <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4701#4702#0" expanded="true" />
-            <element signature="e#4764#4765#0" expanded="true" />
-            <element signature="e#5025#5026#0" expanded="true" />
-            <element signature="e#5055#5056#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#5141#5142#0" expanded="true" />
-            <element signature="e#5184#5185#0" expanded="true" />
-            <element signature="e#5227#5228#0" expanded="true" />
-            <element signature="e#5265#5266#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2137,13 +2132,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_controller_test.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5229682">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/ControllerTest.java">
@@ -2154,44 +2149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/AnalogueController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4701#4702#0" expanded="true" />
-            <element signature="e#4764#4765#0" expanded="true" />
-            <element signature="e#5025#5026#0" expanded="true" />
-            <element signature="e#5055#5056#0" expanded="true" />
-            <element signature="e#5098#5099#0" expanded="true" />
-            <element signature="e#5141#5142#0" expanded="true" />
-            <element signature="e#5184#5185#0" expanded="true" />
-            <element signature="e#5227#5228#0" expanded="true" />
-            <element signature="e#5265#5266#0" expanded="true" />
-            <element signature="e#5290#5291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Vector3D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Sprite2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2214,11 +2175,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Sprite2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031446543">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/AnalogueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2235,30 +2218,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-            <element signature="e#2817#2818#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2931#2932#0" expanded="true" />
-            <element signature="e#2967#2968#0" expanded="true" />
-            <element signature="e#3014#3015#0" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3089#3090#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/lsr/Goal.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7798742">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
           </folding>
         </state>
       </provider>
